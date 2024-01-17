@@ -1,0 +1,408 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 100px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  position: absolute;
+  background: black;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #8f0934;
+  border-radius: 100px;
+}
+
+body {
+  font-family: "Bebas Neue" !important;
+  letter-spacing: 0.025em !important;
+}
+
+.landing {
+  background-image: url("/images/wp10754971-project-zomboid-wallpapers.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.to-dark-round {
+  background: radial-gradient(at center, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 1));
+}
+
+.to-dark-round-2 {
+  background: radial-gradient(
+    at center,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+.scc-secondary {
+  text-shadow: 2px 2px 1px #7f7f7f;
+}
+
+.scc-secondary-1 {
+  -webkit-animation: flash-let ease-out 7s infinite;
+  -moz-animation: flash-let ease-out 7s infinite;
+  animation: flash-let ease-out 7s infinite;
+  animation-delay: 2s;
+}
+
+.bloodbot {
+  background-image: url("/images/bloodbot.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+.bloodtop {
+  background-image: url("/images/bloodtop.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+.bloodtop-1::after {
+  content: "";
+  position: absolute;
+  width: calc(100vw - 10px);
+  height: 100%;
+  z-index: 1;
+  top: 25%;
+  background-image: url("/images/bloodtop.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+.flashit {
+  -webkit-animation: flash ease-out 7s infinite;
+  -moz-animation: flash ease-out 7s infinite;
+  animation: flash ease-out 7s infinite;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes flash {
+  from {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  93% {
+    opacity: 0.6;
+  }
+  94% {
+    opacity: 0.2;
+  }
+  96% {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  from {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  93% {
+    opacity: 0.6;
+  }
+  94% {
+    opacity: 0.2;
+  }
+  96% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes flash-let {
+  from {
+    color: white;
+  }
+  92% {
+    color: white;
+  }
+  93% {
+    color: #94042e;
+  }
+  94% {
+    color: #94042e;
+  }
+  96% {
+    color: #94042e;
+  }
+  to {
+    color: white;
+  }
+}
+
+@keyframes flash-let {
+  from {
+    color: white;
+  }
+  92% {
+    color: white;
+  }
+  93% {
+    color: #94042e;
+  }
+  94% {
+    color: #94042e;
+  }
+  96% {
+    color: #94042e;
+  }
+  to {
+    color: white;
+  }
+}
+
+.main-btn::before {
+  content: url("/images/btn-bg-1.png");
+  position: absolute;
+  left: -30%;
+  top: -35%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+.secon-btn::before {
+  content: url("/images/btn-bg-1.png");
+  position: absolute;
+  left: -30%;
+  top: -75%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+.ter-btn::before {
+  content: url("/images/btn-bg-1.png");
+  position: absolute;
+  left: -15%;
+  top: -35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navi-main::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 5.5rem;
+  background-color: black !important;
+}
+
+.shadow {
+  position: absolute;
+  background: radial-gradient(at center, transparent, black, black);
+  height: 100vh;
+  width: calc(100vw - 10px);
+  -webkit-animation: flash ease-out 7s infinite;
+  -moz-animation: flash ease-out 7s infinite;
+  animation: flash ease-out 7s infinite;
+  animation-delay: 2s;
+}
+
+/* .clip {
+  position: absolute;
+  height: 100vh;
+  width: calc(100vw - 10px);
+  clip-path: polygon(0 75%, 0% 100%, 50% 100%);
+  background-color: #94042e;
+  z-index: 10;
+}
+
+.clip-1 {
+  position: absolute;
+  height: 100vh;
+  width: calc(100vw - 10px);
+  clip-path: polygon(0 0, 0 25%, 50% 0);
+  background-color: #94042e;
+  top: 100%;
+  z-index: 10;
+} */
+
+.char-1 {
+  content: url("/images/char-1.png");
+  position: absolute;
+  z-index: 10;
+  width: 50%;
+  height: 120%;
+  left: 0;
+  filter: drop-shadow(5px 5px 2px gray);
+}
+
+.char-2 {
+  content: url("/images/char-2.png");
+  position: absolute;
+  z-index: 10;
+  width: 50%;
+  height: 120%;
+  top: 0;
+  filter: drop-shadow(5px 5px 1px gray);
+}
+
+.coin-profile {
+  position: relative;
+  width: 5rem !important;
+  height: 5rem !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  filter: drop-shadow(5px 5px 1px #8f0934);
+  z-index: 2;
+}
+
+/* .bd-coins::after {
+  content: url("/images/btn-bg-2.png");
+  position: absolute;
+  width: 5rem;
+  top: 0;
+  z-index: 1;
+} */
+
+.bd-coin {
+  border: 2px solid #8f0934;
+  border-radius: 4px;
+}
+
+.bd-coin::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/grunge-cement-wall.jpg");
+  background-size: cover;
+  opacity: 25%;
+}
+
+.pulse {
+  height: 100px;
+  width: 200px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.pulse:after {
+  content: "";
+  display: block;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200px 100px"><polyline fill="none" stroke-width="3px" stroke="white" points="2.4,58.7 70.8,58.7 76.1,46.2 81.1,58.7 89.9,58.7 93.8,66.5 102.8,22.7 110.6,78.7 115.3,58.7 126.4,58.7 134.4,54.7 142.4,58.7 197.8,58.7 "/></svg>')
+    0 0 no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-animation: 2s pulse infinite linear;
+  animation: 2s pulse infinite linear;
+}
+.pulse:before {
+  content: "";
+  background: #444;
+  position: absolute;
+  z-index: -1;
+  left: 2px;
+  right: 2px;
+  bottom: 0;
+  top: 16px;
+  margin: auto;
+  height: 3px;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    clip: rect(0, 0, 100px, 0);
+  }
+  10% {
+    clip: rect(0, 66.6666666667px, 100px, 0);
+  }
+  38% {
+    clip: rect(0, 133.3333333333px, 100px, 0);
+  }
+  48% {
+    clip: rect(0, 200px, 100px, 0);
+  }
+  52% {
+    clip: rect(0, 200px, 100px, 0);
+  }
+  62% {
+    clip: rect(0, 200px, 100px, 66.6666666667px);
+  }
+  90% {
+    clip: rect(0, 200px, 100px, 133.3333333333px);
+  }
+  100% {
+    clip: rect(0, 200px, 100px, 200px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    clip: rect(0, 0, 100px, 0);
+  }
+  10% {
+    clip: rect(0, 66.6666666667px, 100px, 0);
+  }
+  38% {
+    clip: rect(0, 133.3333333333px, 100px, 0);
+  }
+  48% {
+    clip: rect(0, 200px, 100px, 0);
+  }
+  52% {
+    clip: rect(0, 200px, 100px, 0);
+  }
+  62% {
+    clip: rect(0, 200px, 100px, 66.6666666667px);
+  }
+  90% {
+    clip: rect(0, 200px, 100px, 133.3333333333px);
+  }
+  100% {
+    clip: rect(0, 200px, 100px, 200px);
+  }
+}
+
+.mods {
+  background-color: black;
+  background-image: url("/images/halloween_background_with_blood_splatters_and_drips_140911.webp");
+  background-repeat: no-repeat;
+}
