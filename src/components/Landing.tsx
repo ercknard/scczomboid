@@ -22,12 +22,12 @@ export default function Landing() {
           {" "}
           On <span className="text-[#94042e] flashit">Scc.tips</span>
         </div>
-        <Button className="relative flex py-4 px-8 mx-auto">
+        {/* <Button className="relative flex py-4 px-8 mx-auto">
           <span className="main-btn text-[#ffffff] text-lg font-bold">
             {" "}
             Play!{" "}
           </span>
-        </Button>
+        </Button> */}
       </div>
     </section>
   );
