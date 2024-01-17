@@ -11,8 +11,8 @@ export default function Game() {
         <span className="text-[#8f0934]">C</span>
         <span className="text-4xl">ions</span>{" "}
       </div>
-      <div className="flex 3xl:w-6/12 justify-evenly">
-        <div className="relative w-3/12 p-4 min-h-[500px] bd-coin flex flex-col justify-between">
+      <div className="flex 3xl:w-6/12 w-10/12 justify-evenly">
+        <div className="relative w-3/12 p-4 min-h-[500px] bd-coin flex flex-col justify-between z-20">
           <div>
             <span className="bd-coins" />
             <Image
@@ -40,7 +40,7 @@ export default function Game() {
             </Button>
           </div>
         </div>
-        <div className="relative w-3/12 p-4 min-h-[500px] bd-coin flex flex-col justify-between">
+        <div className="relative w-3/12 p-4 min-h-[500px] bd-coin flex flex-col justify-between z-20">
           <div>
             <span className="bd-coins" />
             <Image
@@ -68,7 +68,7 @@ export default function Game() {
             </Button>
           </div>
         </div>
-        <div className="relative w-3/12 p-4 min-h-[500px] bd-coin flex flex-col justify-between">
+        <div className="relative w-3/12 p-4 min-h-[500px] bd-coin flex flex-col justify-between z-20">
           <div>
             <span className="bd-coins" />
             <Image

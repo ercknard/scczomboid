@@ -164,11 +164,11 @@ export default function Mods() {
         <span className="text-[#8f0934]">G</span>
         <span className="text-4xl">ameplay</span>{" "}
       </div>
-      <div className="flex flex-wrap 3xl:w-6/12 gap-8 justify-center">
+      <div className="flex flex-wrap 3xl:w-6/12 w-10/12 gap-8 justify-center">
         {projects.map((item) => (
           <div
             key={item.num}
-            className="relative w-[22%] p-4 min-h-[350px] bd-coin flex flex-col justify-between"
+            className="relative w-[22%] p-4 min-h-[350px] bd-coin flex flex-col justify-between z-20"
           >
             <div>
               <span className="bd-coins" />
@@ -180,9 +180,10 @@ export default function Mods() {
                 height={1114}
               />
               {/* <div className="pulse"></div> */}
-              <div className="text-[white] my-8">
+              <div className="text-[white] my-8 text-center">
                 {" "}
                 <span className="text-[#8f0934] text-[3rem]">{item.num} </span>
+                <br />
                 <span className="text-xl">{item.description}. </span>
               </div>
             </div>
@@ -195,11 +196,11 @@ export default function Mods() {
         <span className="text-[#8f0934]">M</span>
         <span className="text-4xl">ods</span>{" "}
       </div>
-      <div className="flex flex-wrap 3xl:w-6/12 gap-8 justify-center">
+      <div className="flex flex-wrap 3xl:w-6/12 w-10/12 gap-8 justify-center">
         {mods.map((item) => (
           <div
             key={item.num}
-            className="relative w-[22%] p-4 min-h-[200px] bd-coin flex flex-col justify-between"
+            className="relative w-[22%] p-4 min-h-[200px] bd-coin flex flex-col justify-between z-20"
           >
             <div>
               <span className="bd-coins" />
