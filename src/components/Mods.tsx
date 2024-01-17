@@ -4,73 +4,82 @@ import Button from "@mui/material/Button";
 const projects = [
   {
     num: 1,
+    desc: "",
     description: "Zombie Horde Survival",
     image:
       "https://pzwiki.net/w/images/thumb/9/98/Axe_Model.png/300px-Axe_Model.png",
   },
   {
     num: 2,
+    desc: "",
     description: "Sandbox Collaborative Mission",
     image:
       "https://pzwiki.net/w/images/thumb/c/c3/Model_Magazine.png/300px-Model_Magazine.png",
   },
   {
     num: 3,
-    description:
-      "Crypto Vouchers: Recover CryptoCurrency Vouchers from the game",
+    desc: "Crypto Vouchers:",
+    description: "Recover CryptoCurrency Vouchers from the game",
     image: "/images/StakeCubeCoin.png",
   },
   {
     num: 4,
-    description: "PvE & PvP: Fight the Horde and/or Other Players",
+    desc: "PvE & PvP:",
+    description: "Fight the Horde and/or Other Players",
     image:
       "https://pzwiki.net/w/images/thumb/4/44/Machete_Model.png/300px-Machete_Model.png",
   },
   {
     num: 5,
-    description: "Factions: Group together to survive",
+    desc: "Factions:",
+    description: "Group together to survive",
     image:
       "https://pzwiki.net/w/images/thumb/f/f5/UmbrellaOpen_Model.png/300px-UmbrellaOpen_Model.png",
   },
   {
     num: 6,
-    description: "Map Sharing: Share your map with friends",
+    desc: "Map Sharing:",
+    description: "Share your map with friends",
     image:
       "https://pzwiki.net/w/images/thumb/d/dd/Map_Model.png/192px-Map_Model.png",
   },
   {
     num: 7,
-    description: "Safehouses: Claim buildings for bases",
+    desc: "Safehouses:",
+    description: "Claim buildings for bases",
     image:
       "https://pzwiki.net/w/images/thumb/4/41/Bathtowel_Model.png/192px-Bathtowel_Model.png",
   },
   {
     num: 8,
-    description: "Repair Walls: Make Repairs to your Base Defenses",
+    desc: "Repair Walls:",
+    description: "Make Repairs to your Base Defenses",
     image:
       "https://pzwiki.net/w/images/thumb/d/d7/PipeWrench_Model.png/300px-PipeWrench_Model.png",
   },
   {
     num: 9,
-    description: "Expanded Map: More areas to explore",
+    desc: "Expanded Map:",
+    description: "More areas to explore",
     image:
       "https://pzwiki.net/w/images/thumb/d/dd/Map_Model.png/192px-Map_Model.png",
   },
   {
     num: 10,
-    description:
-      "Skill Recovery Journal: Recover 60% of your characters skills upon death.",
+    desc: "Skill Recovery Journal:",
+    description: "Recover 60% of your characters skills upon death.",
     image:
       "https://pzwiki.net/w/images/thumb/4/43/Notebook_Model.png/192px-Notebook_Model.png",
   },
   {
     num: 11,
-    description:
-      "Expanded Weapons: Rifles, Carbines, Pistols, Knives, Swords and Large Hammers",
+    desc: "Expanded Weapons:",
+    description: "Rifles, Carbines, Pistols, Knives, Swords and Large Hammers",
     image: "https://pzwiki.net/w/images/8/80/HandAxe_Model.png",
   },
   {
     num: 12,
+    desc: "",
     description: "Expanded Electronics Skills",
     image: "https://pzwiki.net/w/images/f/fb/Tv_Anim.gif",
   },
@@ -79,76 +88,88 @@ const projects = [
 const mods = [
   {
     num: 1,
+    desc: "",
     description: "Dancing, Sitting & custom Emotes",
     image:
       "https://pzwiki.net/w/images/thumb/9/98/Axe_Model.png/300px-Axe_Model.png",
   },
   {
     num: 2,
+    desc: "",
     description: "More Cars & Trucks",
     image:
       "https://pzwiki.net/w/images/thumb/c/c3/Model_Magazine.png/300px-Model_Magazine.png",
   },
   {
     num: 3,
+    desc: "",
     description: "Extra Cars + Buses",
     image: "/images/StakeCubeCoin.png",
   },
   {
     num: 4,
-    description: "So Many Vehicles: Campers, Hummers, Trucks & More",
+    desc: "So Many Vehicles:",
+    description: "Campers, Hummers, Trucks & More",
     image:
       "https://pzwiki.net/w/images/thumb/4/44/Machete_Model.png/300px-Machete_Model.png",
   },
   {
     num: 5,
-    description: "Scrap Weapon: Craft makeshift weapons from scraps",
+    desc: "Scrap Weapon:",
+    description: "Craft makeshift weapons from scraps",
     image:
       "https://pzwiki.net/w/images/thumb/f/f5/UmbrellaOpen_Model.png/300px-UmbrellaOpen_Model.png",
   },
   {
     num: 6,
-    description:
-      "Extra Guns with Upgrades: Magazines, Scopes, Silencers & Novel Addons",
+    desc: "Extra Guns with Upgrades:",
+    description: "Magazines, Scopes, Silencers & Novel Addons",
     image:
       "https://pzwiki.net/w/images/thumb/d/dd/Map_Model.png/192px-Map_Model.png",
   },
   {
     num: 7,
+    desc: "",
     description: "Additional Clothing",
     image:
       "https://pzwiki.net/w/images/thumb/4/41/Bathtowel_Model.png/192px-Bathtowel_Model.png",
   },
   {
     num: 8,
+    desc: "",
     description: "Makeshift Armor Crafting",
     image:
       "https://pzwiki.net/w/images/thumb/d/d7/PipeWrench_Model.png/300px-PipeWrench_Model.png",
   },
   {
     num: 9,
+    desc: "",
     description: "Structure & Object Health",
     image:
       "https://pzwiki.net/w/images/thumb/d/dd/Map_Model.png/192px-Map_Model.png",
   },
   {
     num: 10,
+    desc: "",
     description: "Vehicle Status on Dash",
     image:
       "https://pzwiki.net/w/images/thumb/4/43/Notebook_Model.png/192px-Notebook_Model.png",
   },
   {
     num: 11,
+    desc: "",
     description: "Unique & Special Zombies",
     image: "https://pzwiki.net/w/images/8/80/HandAxe_Model.png",
   },
   {
     num: 12,
-    description: "Expanded Helicopter Events: Special Aerial Drops & more",
+    desc: "Expanded Helicopter Events:",
+    description: "Special Aerial Drops & more",
     image: "https://pzwiki.net/w/images/f/fb/Tv_Anim.gif",
   },
   {
     num: 13,
+    desc: "",
     description: "Extra Flags & Tiles",
     image: "https://pzwiki.net/w/images/f/fb/Tv_Anim.gif",
   },
@@ -184,6 +205,7 @@ export default function Mods() {
                 {" "}
                 <span className="text-[#8f0934] text-[3rem]">{item.num} </span>
                 <br />
+                <span className="text-[#8f0934] text-xl">{item.desc} </span>
                 <span className="text-xl">{item.description}. </span>
               </div>
             </div>
@@ -216,6 +238,7 @@ export default function Mods() {
                 {" "}
                 <span className="text-[#8f0934] text-[3rem]">{item.num} </span>
                 <br />
+                <span className="text-[#8f0934] text-xl">{item.desc} </span>
                 <span className="text-xl">{item.description}. </span>
               </div>
             </div>
