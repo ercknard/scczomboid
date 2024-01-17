@@ -259,7 +259,7 @@ body {
   position: absolute;
   z-index: 10;
   width: 50%;
-  height: 120%;
+  /* height: 120%; */
   left: 0;
   filter: drop-shadow(5px 5px 2px gray);
 }
